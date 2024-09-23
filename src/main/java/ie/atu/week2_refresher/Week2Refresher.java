@@ -30,7 +30,7 @@ public class Week2Refresher {
         return productList;
     }
 
-    @PostMapping
+    @PostMapping("/products")
     public Product addProduct(@RequestBody Product product) {
         productList.add(product);
         return product;
